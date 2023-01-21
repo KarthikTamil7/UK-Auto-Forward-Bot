@@ -19,6 +19,17 @@ async def start(client, message):
     )
 
 ################################################################################################################################################################################################################################################
+# help command
+
+@channelforward.on_message(filters.command("help") & filters.private & filters.incoming)
+async def help(client, message):
+    await message.reply(
+        text=Translation.HELP,
+        disable_web_page_preview=True,
+        quote=True
+    )
+
+################################################################################################################################################################################################################################################
 # about command
 
 @channelforward.on_message(filters.command("about") & filters.private & filters.incoming)
