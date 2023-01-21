@@ -39,6 +39,8 @@ You can deploy this code any where you want but we provided heroku and railway d
 ```
 start - check whether bot is alive 
 
+help - How to Use?
+
 about - to know about me
 ```
 
