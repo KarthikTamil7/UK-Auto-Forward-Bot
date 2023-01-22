@@ -11,12 +11,12 @@ from config import Config
 async def forward(client, message):
     # Forwarding the messages to the channel
    try:
-      for id in Config.CHANNEL:
+      for id in Config.CHANNEL_ID:
          from_channel, to_channel = id.split(":")
          if message.chat.id == int(from_channel):
             func = message.copy if Config.AS_COPY else message.forward
-            await func(int(to_channel), AS_COPY=True)
-            logger.info("Forwarded a message from", from_channel, "to", to_channel)
+            await func(int(to_channel), as_copy=True)
+            logger.info("Forwarded a Message from", from_channel, "to", to_channel)
             await asyncio.sleep(1)
    except Exception as e:
       logger.exception(e)
