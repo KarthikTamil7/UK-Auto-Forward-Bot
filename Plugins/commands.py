@@ -3,7 +3,7 @@ logger = logging.getLogger(__name__)
 
 from pyrogram import filters
 from bot import channelforward
-from config import Config, PICS
+from config import Config
 from translation import Translation
 import random
 
