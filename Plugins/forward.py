@@ -15,7 +15,7 @@ async def forward(client, message):
          from_channel, to_channel = id.split(":")
          if message.chat.id == int(from_channel):
 
-            await message.forward(int(to_channel), as_copy=True)
+            await message.forward(int(to_channel))
             logger.info("Forwarded a Message from", from_channel, "to", to_channel)
             await asyncio.sleep(1)
    except Exception as e:
