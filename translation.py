@@ -1,7 +1,7 @@
 class Translation(object):
 
       # Start text
-      START = """<b>Hi 👋🏻 Bro,
+      START = """<b>Hi 👋🏻 {mention},
 
 I'm UK Studios Official a Bot to Maintain Your Channels. I am very useful for the Channel Admin who have many Channels.
 
