@@ -12,7 +12,7 @@ import random
 
 @channelforward.on_message(filters.command("start") & filters.private & filters.incoming)
 async def start(client, message):
-    await message.reply_photo(
+    await message.reply(
         photo=random.choice(Config.PICS),
         text=Translation.START,
         disable_web_page_preview=True,
