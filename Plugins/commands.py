@@ -15,7 +15,6 @@ async def start(client, message):
     await message.reply_photo(
         photo=random.choice(Config.PICS),
         caption=Translation.START,
-        disable_web_page_preview=True,
         quote=True
     )
 
