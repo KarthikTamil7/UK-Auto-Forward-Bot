@@ -13,7 +13,7 @@ import random
 @channelforward.on_message(filters.command("start") & filters.private & filters.incoming)
 async def start(client, message):
     await message.reply_photo(
-        photo=random.choice(Config.PICS),
+        photo="https://telegra.ph/file/d6f92c979ad96b2031cba.png",
         caption=Translation.START,
         quote=True
     )
