@@ -12,7 +12,7 @@
     "env": {
         "AS_COPY": {
             "description": "set this to true to forward message as copy",
-            "value": "False" 
+            "value": "True" 
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
