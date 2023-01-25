@@ -1,7 +1,7 @@
 class Translation(object):
 
       # Start text
-      START = """<b>Hi 👋🏻 [{me.first_name}](tg://user?id={}),
+      START = """<b>Hi 👋🏻 {me.first_name},
 
 I'm UK Studios Official a Bot to Maintain Your Channels. I am very useful for the Channel Admin who have many Channels.
 
